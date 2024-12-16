@@ -62,7 +62,6 @@ html {
 body {
     font: 14px/1.5 "Work Sans", sans-serife;
     background: #FFFFFF;
-    padding: 1em;
     color: #111111;
     max-width: 1200px;
     margin: 0 auto;
@@ -74,17 +73,26 @@ body {
 }
 
 header {
+    background: white;
+    font-size: 1.6em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
-    top: 1em;
+    z-index: 1000;
+    top: 0;
+    padding: 2em 2em 1em;
 }
+
+/* html:not([data-scroll='0']) header {
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+} */
+
 
 .site-header .header-first {
     display: flex;
     justify-content: space-between;
-    gap: 2em;
+    gap: 1em;
     margin-bottom: 1em;
     font-size: 1.5em;
     font-weight: bold;
@@ -116,8 +124,21 @@ a {
     color: black;
 }
 
-.inactiv {
-    display: none;
+.navbar-closed i{
+    padding-top: 0.7em;
+}
+
+
+.inactive {
+    display: none
+}
+
+.active{
+    position: absolute;
+    top: 4.5em;
+    left: 2em;
+    opacity: 0.92;
+    width: 85%;
 }
 
 
@@ -139,9 +160,10 @@ a {
     display: block;
     max-width: 100%;
     text-align: cennter;
-    background: #ECC15B;
+    background: #eeeaea;
+    color: black;
     border-radius: 0.2em;
-    padding: 0.2em 0;
+    padding: 0.5em 0;
     font-weight: bold;
     font-size: 13px;
     text-shadow: 0.9px 0.9px #d6cfcf;
@@ -152,45 +174,77 @@ section {
 }
 
 
-@media(min-width:600px) {
-    .site-header{
+@media(min-width:650px) {
+.site-header{
+    font-size: inherit;
+}
+
+    .site-header {
+        padding: 3em 2em 1em;
         gap: 10%;
     }
 
-    .header-first{
+    .header-first {
         flex: 1 1 25%;
     }
-    .header-second{
-        flex: 1 1 60%
+
+    .header-second {
+        flex: 1 1 60%;
+        position: relative;
     }
-    .navbar-closed{
+
+    .navbar-closed {
         display: none;
     }
-    .inactiv {
+
+    .inactive {
         display: block;
     }
 
-    .nav-list-items{
+    .active{
+        position: static;
+        top: 4.5em;
+        left: 2em;
+        opacity: 0.92;
+        width: 85%;
+    }
+
+    .nav-list-items {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .nav-list-items li a{
+    .nav-list-items li a {
         background-color: white;
+        padding: 0.2em;
+    }
+}
+
+@media(min-width:850px) {
+    .site-header {
+        font-size: 1.5em;
+        padding: 2em 2em 0em;
+    }
+
+    .nav-list-items li a {
+        padding: 1em;
     }
 }
 
 
 /* End of header section */
+.sections-wrapper{
+    padding: 0 3em;
+}
 
-.hero{
-    padding: 3em;
+.hero {
+    padding: 1em 0;
     height: 52em;
     position: relative;
 }
 
-.hero-wrapper{
-    background: #e6b749;
+.hero-wrapper {
+    background: black;
     background-image: url(./img/wallpaperflare.com_wallpaper\ \(1\).jpg);
     background-size: cover;
     /* opacity: 0.8; */
@@ -199,7 +253,7 @@ section {
     border-radius: 1em;
 }
 
-.img-wripper{
+.img-wripper {
     background-image: url(./img/Снимка\ CV.png);
     background-size: cover;
     width: 15em;
@@ -210,9 +264,9 @@ section {
     left: 15%;
 }
 
-.hero-wrapper h1{
+.hero-wrapper h1 {
     position: absolute;
-    top: 60%;
+    top: 58%;
     left: 5%;
     color: #ffffff;
     font-size: 3em;
@@ -220,3 +274,12 @@ section {
     display: flex;
     flex-direction: column;
 }
+
+@media (min-width:1000px){
+    .img-wripper{
+        top: 15%;
+        left: 65%;
+    }
+}
+
+/* End of hero section */
