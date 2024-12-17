@@ -74,14 +74,14 @@ body {
 
 header {
     background: white;
-    font-size: 1.6em;
+    font-size: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
     z-index: 1000;
     top: 0;
-    padding: 2em 2em 1em;
+    padding: 1em 2em;
 }
 
 /* html:not([data-scroll='0']) header {
@@ -93,7 +93,7 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -173,6 +173,12 @@ section {
     height: 400px;
 }
 
+@media (min-width: 450px){
+    header {
+        font-size: 1.6em;
+    }
+}
+
 
 @media(min-width:650px) {
 .site-header{
@@ -223,7 +229,7 @@ section {
 @media(min-width:850px) {
     .site-header {
         font-size: 1.5em;
-        padding: 2em 2em 0em;
+        padding: 1em 2em;
     }
 
     .nav-list-items li a {
@@ -238,8 +244,7 @@ section {
 }
 
 .hero {
-    padding: 1em 0;
-    height: 52em;
+    height: 45em;
     position: relative;
 }
 
@@ -247,10 +252,10 @@ section {
     background: black;
     background-image: url(./img/wallpaperflare.com_wallpaper\ \(1\).jpg);
     background-size: cover;
-    /* opacity: 0.8; */
+    /* opacity: 0.9; */
     width: 100%;
     height: 100%;
-    border-radius: 1em;
+    /* border-radius: 1em; */
 }
 
 .img-wripper {
@@ -260,7 +265,7 @@ section {
     height: 15em;
     border-radius: 7em;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 15%;
 }
 
@@ -270,16 +275,79 @@ section {
     left: 5%;
     color: #ffffff;
     font-size: 3em;
-    padding: 1em;
+    font-weight: bold;
+    padding: 2em 1em;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
 }
 
+.hero-wrapper h1 strong{
+    font-weight: normal;
+    font-size: 0.6em;
+}
+
 @media (min-width:1000px){
     .img-wripper{
-        top: 15%;
-        left: 65%;
+        top: 10%;
+        left: 70%;
+    }
+
+    .hero-wrapper h1 {
+        position: absolute;
+        top: 58%;
+        left: 5%;
+        color: #ffffff;
+        font-size: 3em;
+        font-weight: bold;
+        padding: 2em 1em;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-wrapper h1 strong{
+        font-weight: normal;
+        font-size: 0.6em;
     }
 }
 
 /* End of hero section */
+
+.skills{
+    padding: 2em 0;
+}
+
+
+.skills h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.skills-wrapper ul{
+display: flex;
+flex-wrap: wrap;
+gap: 2em;
+justify-content: center;
+}
+.skills-wrapper ul li{
+    flex: 1 1 25%;
+    align-self: center;
+    text-align: center;
+}
+
+.skills-wrapper ul li i{
+    color: #62a1a7;
+    font-size: 4em;
+}
+.seo{
+    position: relative;
+}
+.skills-wrapper ul li strong{
+    color: #62a1a7;
+    position: absolute;
+    left: 32.4%;
+    top: 11.5px;
+}
