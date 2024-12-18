@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap);
+
 * {
     margin: 0;
     padding: 0;
@@ -60,7 +62,7 @@ html {
 
 
 body {
-    font: 14px/1.5 "Work Sans", sans-serife;
+    font: 14px/1.5 "Kode Mono", sans-serife;
     background: #FFFFFF;
     color: #111111;
     max-width: 1200px;
@@ -265,13 +267,13 @@ section {
     height: 15em;
     border-radius: 7em;
     position: absolute;
-    top: 30%;
+    top: 23%;
     left: 15%;
 }
 
 .hero-wrapper h1 {
     position: absolute;
-    top: 58%;
+    top: 49%;
     left: 5%;
     color: #ffffff;
     font-size: 3em;
@@ -315,15 +317,20 @@ section {
 /* End of hero section */
 
 .skills{
-    padding: 2em 0;
+    padding: 2em 0 0;
 }
 
 
-.skills h2{
+.skills h2,
+.about h2{
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1em;
+}
+
+.skills-wrapper{
+    padding-top: 1.5em;
 }
 
 .skills-wrapper ul{
@@ -351,3 +358,45 @@ justify-content: center;
     left: 32.4%;
     top: 11.5px;
 }
+
+/* End on skills section */
+.about-wrappe {
+    display: felx;
+    flex-direction: column;
+}
+
+.education,
+.experiences,
+.interests{
+    border-radius: 1em;
+    padding: 1em 0.8em;
+}
+
+
+.about h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.about h4{
+    font-weight: bold;
+}
+
+.education,
+.interests{
+    background: #efeaea;
+}
+
+.experiences{
+    background: #f5f8f1;
+}
+.about-wrapper div div{
+    padding-bottom: 1em;
+}
+
+.about-wrapper div div *{
+    padding-bottom: 0.5em;
+}
+
+
