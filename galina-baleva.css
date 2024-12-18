@@ -360,9 +360,14 @@ justify-content: center;
 }
 
 /* End on skills section */
+.about{
+    min-height: 1100px;
+}
+
 .about-wrappe {
     display: felx;
     flex-direction: column;
+    margin-bottom: 2em;
 }
 
 .education,
@@ -397,6 +402,20 @@ justify-content: center;
 
 .about-wrapper div div *{
     padding-bottom: 0.5em;
+}
+
+.description-about {
+    font-size: 0.8;
+    font-weight: bold;
+    font-family: italic;
+    padding: 3em 0;
+    text-align: center;
+}
+
+
+/* End of about me section */
+.portfolio{
+
 }
 
 
