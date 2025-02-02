@@ -171,9 +171,6 @@ a {
     text-shadow: 0.9px 0.9px #d6cfcf;
 }
 
-section {
-    height: 400px;
-}
 
 @media (min-width: 450px){
     header {
@@ -323,7 +320,8 @@ section {
 
 .skills h2,
 .about h2,
-.portfolio h2{
+.portfolio h2,
+.certificates h2{
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
@@ -362,7 +360,7 @@ justify-content: center;
 
 /* End on skills section */
 .about{
-    min-height: 1330px;
+    min-height: 103em;
 }
 
 .about-wrappe {
@@ -415,9 +413,15 @@ justify-content: center;
 
 
 /* End of about me section */
+
+.certificates,
 .portfolio{
+    margin-bottom: 2em;
     text-align: center;
 }
+
+/* End of certificates section */
+
 .portfolio-categories,
 .portfolio-gallery{
     margin-bottom: 2em;
@@ -444,7 +448,8 @@ justify-content: center;
     border-radius: 1em;
 }
 
-.portfolio-gallery ul{
+.portfolio-gallery ul,
+.certificates-gallery ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -452,21 +457,25 @@ justify-content: center;
     gap: 2em;
 }
 
-.portfolio-gallery ul li{
-    flex: 1 1 40%;
+.portfolio-gallery ul li,
+.certificates-gallery ul li{
+    flex: 0 1 40%;
     border-radius: 1em;
 
 }
 
-.portfolio-gallery ul li a img{
+.portfolio-gallery ul li a img,
+.certificates-gallery ul li a img{
     border-radius: 1em;
 
 }
 
-.all-projects{
+.all{
     border: none;
     background-color: white;
     text-decoration: underline;
 }
+
+
 
 
