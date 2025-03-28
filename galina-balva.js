@@ -1,23 +1,25 @@
-const menuIcon = document.querySelector('.fa-solid');
-let lastKnownScrollPosition = 0;
+const site = document.querySelector('.site');
+const menu = site.querySelector('.header-second')
+const navBar = menu.querySelector('#navbar')
+const navBarItems = menu.querySelectorAll('.nav-list-items li a')
+
+menu.addEventListener('click', () => navBar.className === "inactive" ? navBar.className = "active" : navBar.className  = "inactive");
 
 document.addEventListener("scroll", (e) => {
-    const parent = menuIcon.parentElement.parentElement;
-    const inactivMenu = parent.querySelector('#navbar');
-    
-    inactivMenu.className = "inactive";
-
+    navBar.className = "inactive";
 });
 
+Object.values(navBarItems).forEach(element => element.addEventListener('click', onClickNavBtn));
 
-menuIcon.addEventListener('click', onClick);
+function onClickNavBtn(e){
+    const sectionName = '.' + e.target.id;
+    const section = site.querySelector(sectionName);
+    const topPosition = section.offsetTop - 90
+    console.log(topPosition)
 
-function onClick(e){
-    const parent = e.target.parentElement.parentElement;
-    const inactivMenu = parent.querySelector('#navbar');
-
-    inactivMenu.className = inactivMenu.className === "inactive" ? "active" : "inactive";
+    window.scrollTo({
+        top: topPosition,
+        left: 0,
+        behavior: 'smooth'
+    })
 }
-
-
-

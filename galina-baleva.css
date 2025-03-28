@@ -138,9 +138,9 @@ a {
 .active{
     position: absolute;
     top: 4.5em;
-    left: 2em;
+    left: 0;
     opacity: 0.92;
-    width: 85%;
+    width: 100%;
 }
 
 
@@ -165,7 +165,7 @@ a {
     background: #eeeaea;
     color: black;
     border-radius: 0.2em;
-    padding: 0.5em 0;
+    padding: 1em 0;
     font-weight: bold;
     font-size: 13px;
     text-shadow: 0.9px 0.9px #d6cfcf;
@@ -475,7 +475,3 @@ justify-content: center;
     background-color: white;
     text-decoration: underline;
 }
-
-
-
-
