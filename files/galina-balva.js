@@ -19,7 +19,6 @@ function onClickNavBtn(e){
 
     window.scrollTo({
         top: topPosition,
-        left: 0,
         behavior: 'smooth'
     })
 }

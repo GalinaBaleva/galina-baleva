@@ -72,6 +72,7 @@ body {
 
 .site {
     position: relative;
+    margin: 0 auto;
 }
 
 header {
@@ -126,7 +127,7 @@ a {
     color: black;
 }
 
-.navbar-closed i{
+.navbar-closed i {
     padding-top: 0.7em;
 }
 
@@ -135,12 +136,16 @@ a {
     display: none
 }
 
-.active{
+.active {
     position: absolute;
     top: 4.5em;
     left: 0;
     opacity: 0.92;
     width: 100%;
+}
+
+.active li a {
+    padding: 1em 0;
 }
 
 
@@ -165,24 +170,24 @@ a {
     background: #eeeaea;
     color: black;
     border-radius: 0.2em;
-    padding: 1em 0;
+    padding: 0.5em 0;
     font-weight: bold;
     font-size: 13px;
     text-shadow: 0.9px 0.9px #d6cfcf;
 }
 
 
-@media (min-width: 450px){
+@media (min-width: 450px) {
     header {
         font-size: 1.6em;
     }
 }
 
 
-@media(min-width:650px) {
-.site-header{
-    font-size: inherit;
-}
+@media(min-width:710px) {
+    .site-header {
+        font-size: inherit;
+    }
 
     .site-header {
         padding: 3em 2em 1em;
@@ -206,7 +211,7 @@ a {
         display: block;
     }
 
-    .active{
+    .active {
         position: static;
         top: 4.5em;
         left: 2em;
@@ -225,7 +230,7 @@ a {
     }
 }
 
-@media(min-width:850px) {
+@media(min-width:1000px) {
     .site-header {
         font-size: 1.5em;
         padding: 1em 2em;
@@ -238,8 +243,11 @@ a {
 
 
 /* End of header section */
-.sections-wrapper{
+.sections-wrapper {
     padding: 0 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .hero {
@@ -258,7 +266,7 @@ a {
 }
 
 .img-wripper {
-    background-image: url(./img/Снимка\ CV.png);
+    background-image: url(./img/Ð¡Ð½Ð¸Ð¼ÐºÐ°\ CV.png);
     background-size: cover;
     width: 15em;
     height: 15em;
@@ -281,13 +289,13 @@ a {
     flex-direction: column;
 }
 
-.hero-wrapper h1 strong{
+.hero-wrapper h1 strong {
     font-weight: normal;
     font-size: 0.6em;
 }
 
-@media (min-width:1000px){
-    .img-wripper{
+@media (min-width:1000px) {
+    .img-wripper {
         top: 10%;
         left: 70%;
     }
@@ -304,8 +312,8 @@ a {
         display: flex;
         flex-direction: column;
     }
-    
-    .hero-wrapper h1 strong{
+
+    .hero-wrapper h1 strong {
         font-weight: normal;
         font-size: 0.6em;
     }
@@ -313,7 +321,7 @@ a {
 
 /* End of hero section */
 
-.skills{
+.skills {
     padding: 2em 0 0;
 }
 
@@ -321,37 +329,40 @@ a {
 .skills h2,
 .about h2,
 .portfolio h2,
-.certificates h2{
+.certificates h2 {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     margin-bottom: 1em;
 }
 
-.skills-wrapper{
+.skills-wrapper {
     padding-top: 1.5em;
 }
 
-.skills-wrapper ul{
-display: flex;
-flex-wrap: wrap;
-gap: 2em;
-justify-content: center;
+.skills-wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
 }
-.skills-wrapper ul li{
+
+.skills-wrapper ul li {
     flex: 1 1 25%;
     align-self: center;
     text-align: center;
 }
 
-.skills-wrapper ul li i{
+.skills-wrapper ul li i {
     color: #62a1a7;
     font-size: 4em;
 }
-.seo{
+
+.seo {
     position: relative;
 }
-.skills-wrapper ul li strong{
+
+.skills-wrapper ul li strong {
     color: #62a1a7;
     position: absolute;
     left: 32.4%;
@@ -359,9 +370,6 @@ justify-content: center;
 }
 
 /* End on skills section */
-.about{
-    min-height: 103em;
-}
 
 .about-wrappe {
     display: felx;
@@ -371,35 +379,36 @@ justify-content: center;
 
 .education,
 .experiences,
-.interests{
+.interests {
     border-radius: 1em;
     padding: 1em 0.8em;
 }
 
 
-.about h3{
+.about h3 {
     text-align: center;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.about h4{
+.about h4 {
     font-weight: bold;
 }
 
 .education,
-.interests{
+.interests {
     background: #efeaea;
 }
 
-.experiences{
+.experiences {
     background: #f5f8f1;
 }
-.about-wrapper div div{
+
+.about-wrapper div div {
     padding-bottom: 1em;
 }
 
-.about-wrapper div div *{
+.about-wrapper div div * {
     padding-bottom: 0.5em;
 }
 
@@ -414,8 +423,15 @@ justify-content: center;
 
 /* End of about me section */
 
+@media(min-width: 800px) {
+    .about-wrapper {
+        display: flex;
+        gap: 1em;
+    }
+}
+
 .certificates,
-.portfolio{
+.portfolio {
     margin-bottom: 2em;
     text-align: center;
 }
@@ -423,12 +439,12 @@ justify-content: center;
 /* End of certificates section */
 
 .portfolio-categories,
-.portfolio-gallery{
+.portfolio-gallery {
     margin-bottom: 2em;
 
 }
 
-.portfolio-categories ul{
+.portfolio-categories ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -436,11 +452,11 @@ justify-content: center;
     padding: 1em 0;
 }
 
-.portfolio-categories ul li{
+.portfolio-categories ul li {
     margin: 0.5em 0;
 }
 
-.portfolio-categories ul a{
+.portfolio-categories ul a {
     width: 100%;
     height: 100%;
     padding: 0.8em 1.5em;
@@ -449,7 +465,7 @@ justify-content: center;
 }
 
 .portfolio-gallery ul,
-.certificates-gallery ul{
+.certificates-gallery ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -458,20 +474,40 @@ justify-content: center;
 }
 
 .portfolio-gallery ul li,
-.certificates-gallery ul li{
+.certificates-gallery ul li {
     flex: 0 1 40%;
     border-radius: 1em;
-
 }
 
 .portfolio-gallery ul li a img,
-.certificates-gallery ul li a img{
+.certificates-gallery ul li a img {
     border-radius: 1em;
 
 }
 
-.all{
+.all {
     border: none;
     background-color: white;
     text-decoration: underline;
+}
+
+@media(min-width: 800px) {
+
+    .portfolio-gallery ul li,
+    .certificates-gallery ul li {
+        flex: 0 1 30%;
+    }
+}
+
+.portfolio-gallery ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio-gallery ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5em;
 }
