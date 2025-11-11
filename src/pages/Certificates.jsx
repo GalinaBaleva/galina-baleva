@@ -8,16 +8,34 @@ const Certificates = () => {
                 <ul role="list">
                     <li>
                         <a
-                            href="https://softuni.bg/certificates/certificates/converttoimage/106857?code=71f5147d"
+                            href="https://collection.cloudinary.com/dagwnazwa/18b8c6caf731284f71ba9cdf4c7d23f4?"
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="./img/106857.jpg" alt="tik-tac-toe-game" />
+                            <img src="./img/Full-Stack1.jpg" alt="full-stack" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://collection.cloudinary.com/dagwnazwa/18b8c6caf731284f71ba9cdf4c7d23f4"
+                            target="_blank"
+                            content="noindex, follow"
+                        >
+                            <img src="./img/Full-Stack2.jpg" alt="full-stack" />
                         </a>
                     </li>
                     <li>
                         <a
                             href="https://softuni.bg/certificates/certificates/converttoimage/106857?code=71f5147d"
+                            target="_blank"
+                            content="noindex, follow"
+                        >
+                            <img src="./img/106857.jpg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://softuni.bg/certificates/certificates/converttoimage/111285?code=6aa7cfe1"
                             target="_blank"
                             content="noindex, follow"
                         >
@@ -72,7 +90,6 @@ const Certificates = () => {
                     </li>
                 </ul>
             </div>
-            <button className="all">ALL CERTIFICATES</button>
         </section>
     )
 }

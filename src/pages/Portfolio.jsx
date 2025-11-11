@@ -34,9 +34,21 @@ const Portfolio = () => {
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="./img/PetsInst.png" alt="" />
+                            <img src="./img/PetsInst.png" alt=""/>
                         </a>
-                        <a href="https://gitlab.com/baleva1990/PetsInst" target="_blank" class="github-repo">GitLab Repo Pet'sInst</a>
+                        <a href="https://gitlab.com/baleva1990/PetsInst" target="_blank" className="github-repo">GitLab
+                            Repo Pet'sInst</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://cocktails.baleva-galina.eu/"
+                            target="_blank"
+                            content="noindex, follow"
+                        >
+                            <img src="./img/Mojito.png" alt=""/>
+                        </a>
+                        <a href="https://github.com/GalinaBaleva/mojito-gsap" target="_blank" className="github-repo">GitLab
+                            Repo Mojito GSAP</a>
                     </li>
                     <li>
                         <a
@@ -44,7 +56,7 @@ const Portfolio = () => {
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="./img/233132.png" alt="mailer" />
+                            <img src="./img/233132.png" alt="mailer"/>
                         </a>
                         <a
                             href="https://github.com/GalinaBaleva/newsletter-register"
@@ -60,7 +72,7 @@ const Portfolio = () => {
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="img/150404.png" alt="mailer" />
+                            <img src="img/150404.png" alt="mailer"/>
                         </a>
                         <a
                             href="https://github.com/GalinaBaleva/fahrenheit-rechner"
@@ -76,7 +88,7 @@ const Portfolio = () => {
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="img/230214.png" alt="mailer" />
+                            <img src="img/230214.png" alt="mailer"/>
                         </a>
                         <a
                             href="https://github.com/GalinaBaleva/car-upload"
@@ -92,7 +104,7 @@ const Portfolio = () => {
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="img/drag_and_drop_uploader.png" alt="mailer" />
+                            <img src="img/drag_and_drop_uploader.png" alt="mailer"/>
                         </a>
                         <a
                             href="https://github.com/GalinaBaleva/file-uploader"
@@ -108,7 +120,7 @@ const Portfolio = () => {
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="./img/164426.png" alt="tik-tac-toe-game" />
+                            <img src="./img/164426.png" alt="tik-tac-toe-game"/>
                         </a>
                         <a
                             href="https://github.com/GalinaBaleva/React-SoftUni/tree/main/tik-tac-toe"
@@ -124,7 +136,7 @@ const Portfolio = () => {
                             target="_blank"
                             content="noindex, follow"
                         >
-                            <img src="./img/222842.png" alt="" />
+                            <img src="./img/222842.png" alt=""/>
                         </a>
                         {/* <a href="" class="github-repo">GitHub Repo</a> */}
                     </li>

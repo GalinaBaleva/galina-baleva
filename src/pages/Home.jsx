@@ -138,7 +138,7 @@ const Home = () => {
                             <a href="https://gitlab.com/baleva1990/PetsInst" target="_blank" class="github-repo">GitLab Repo Pet'sInst</a>
                         </li>
                     </ul>
-                     <a href="/portfolio" className="link-to-projects">ALL PROJECTS</a>
+                     <Link to="/portfolio" className="link-to-projects">ALL PROJECTS</Link>
                 </section>
             </div>
         </>
